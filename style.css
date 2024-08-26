@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  rgb(30, 29, 36);
+}
+
+h2{
+    font-size: 26pt;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(245, 230, 230);
+    font-weight: 800;
+    text-align: center;
+    padding-top: 200px;
+  }
+
+            /* MENU NAVEGAÇÃO */
+.nav-menu {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: rgb(25, 24, 29);
+}
+.nav-menu a {
+    margin-right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 13px;
+    text-decoration: none;
+    color: rgb(245, 230, 230);
+    margin-left: 50px;
+    border-radius: 10px;
+}
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+             /* SOBRE MIM */
+
+.container-sobre {
+    width: 100wh;
+    height: 100vh;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 170px;
+    padding-top: 50px;
+}
+.container-sobre h4 {
+    font-size: 20pt;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(245, 230, 230);
+    font-weight: 500;
+}
+.container-sobre h1 {
+    font-size: 45pt;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: rgb(247, 235, 255);
+}
+.container-sobre-img-contato {
+    display: inline-flex;
+    width: 3.5%;
+    margin: 20px;
+    margin-top: 0px;
+}
+.container-sobre-img-profile {
+    border-radius: 100px;
+    width: 45%;
+    margin-left: 200px;
+}
+
+             /* CONHECIMENTOS */
+.container-conhecimentos {
+    width: 100wh;
+    height: 80vh;
+}
+.container-conhecimentos h2{
+    margin-bottom: 150px;
+    font-size: 26pt;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(245, 230, 230);
+    font-weight: 800;
+    text-align: center;
+  }
+.conhecimentos-linguagens{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+.conhecimentos-linguagens-img {
+    width: 150px;
+}
+
+             /* Projetos */
+
+.container-projetos {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 100wh;
+    height: 100vh;
+}
+
+.container-projetos-img {
+    margin: 0px auto;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.container-projetos-img:hover {
+    border-radius: 60px;
+}
+
+             /* RODAPE */
+
+.container-footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(247, 235, 255);
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(25, 24, 29);
+}
+
+             /* Responsivo */
+@media (max-width: 1024px) {
+                /* MENU NAVEGAÇÃO */
+            .nav-menu {
+                margin: 0px;
+                width: 100%;
+                justify-content: center;
+                padding: 0px;
+            }
+            .nav-menu a {
+                margin: 15px;
+                font-size: 13px;
+                padding: 0px;
+                margin-left: 0px;
+                padding: 15px;
+            }
+            
+             /* SOBRE MIM */
+
+             .container-sobre {
+                width: 100%;
+                height: auto;
+                align-items: center;
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+                margin-left: 0px;
+                padding-top: 150px;
+                text-align: center;
+            }
+            .container-sobre h4 {
+                font-size: 10pt;
+                font-family: 'Poppins', sans-serif;
+                color: rgb(245, 230, 230);
+                font-weight: 500;
+                margin: 0px;
+                padding: 0px;
+            }
+            .container-sobre h1 {
+                font-size: 15pt;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 800;
+                margin: 0px;
+                padding: 0px;
+                color: rgb(247, 235, 255);
+            }
+            .container-sobre-img-contato {
+                display: inline-flex;
+                width: 4.5%;
+                padding: 15px;
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+            .container-sobre-img-profile {
+                border-radius: 100px;
+                width: 45%;
+                margin: 0px;
+                margin-bottom: 195px;
+            }
+                                                 /* CONHECIMENTOS */
+             .container-conhecimentos {
+                width: 100wh;
+                height: 85vh;
+            }
+            .container-conhecimentos h2{
+                margin-bottom: 55px;
+                font-size: 26pt;
+                font-family: 'Poppins', sans-serif;
+                color: rgb(245, 230, 230);
+                font-weight: 800;
+                text-align: center;
+              }
+            .conhecimentos-linguagens{
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+            }
+            .conhecimentos-linguagens-img {
+                margin-top: 100px;
+                width: 90px;
+            }
+                                                              /* Projetos */
+h2 {
+    padding-top: 0px;
+}
+.container-projetos {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    width: 100wh;
+    height: 100vh;
+    margin-bottom: 350px;
+}
+
+.container-projetos-img {
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.container-projetos-img:hover {
+    border-radius: 60px;
+}
+
+}
+                
+
